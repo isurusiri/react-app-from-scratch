@@ -6,7 +6,7 @@
   "scripts": {
     "format": "prettier --write \"src/**/*.{js,jsx,css,json}\" ",
     "format:check": "prettier --list-different \"src/**/*.{js,jsx,css,json}\" ",
-    "lint": "eslint \"**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
     "lint:debug": "npm run lint -- --debug",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html"
@@ -23,9 +23,13 @@
   },
   "homepage": "https://github.com/isurusiri/react-app-from-scratch#readme",
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.12.0",
     "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.3",
     "parcel-bundler": "^1.11.0",
     "prettier": "^1.15.3"
   },
